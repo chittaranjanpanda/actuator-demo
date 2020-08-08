@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: actuator-demo
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
+
+
+#management.server.port=8081
+#management.server.address=127.0.0.1
+# wild card to include/exclude all
+#management.endpoints.web.exposure.include=*
+#management.endpoints.web.exposure.exclude=*
+# you can include specific properties like below
+#management.endpoints.web.exposure.include=env,beans
+#management.endpoints.web.exposure.exclude=heapdump
